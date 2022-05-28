@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of, switchMap } from 'rxjs';
 import { Auth, User, GoogleAuthProvider, signInWithPopup, getAdditionalUserInfo, signOut, user } from '@angular/fire/auth';
 import { UserService } from './user.service';
-import { Profile } from '../models/profile.model';
+import { Profile } from '../models/profile';
 
 @Injectable({
   providedIn: 'root'

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { Profile } from '../models/profile.model';
+import { Profile } from '../models/profile';
 import { AuthService } from '../services/auth.service';
 
 @Component({

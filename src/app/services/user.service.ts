@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Firestore, setDoc, doc, docData } from '@angular/fire/firestore'
 import { User } from 'firebase/auth';
 import { Observable } from 'rxjs';
-import { Profile } from '../models/profile.model';
+import { Profile } from '../models/profile';
 
 @Injectable({
   providedIn: 'root'

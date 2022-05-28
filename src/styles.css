@@ -2,3 +2,7 @@
 body {
     padding-top: 80px;
 }
+
+.dataTables_empty {
+    display: none;
+}

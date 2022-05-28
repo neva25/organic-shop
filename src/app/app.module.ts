@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -21,6 +22,8 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { LoginComponent } from './login/login.component';
 import { OrdersComponent } from './orders/orders.component';
 import { AuthGuardModule } from '@angular/fire/auth-guard';
+import { ProductFormComponent } from './admin/product-form/product-form.component';
+import { DataTablesModule } from 'angular-datatables';
 
 
 @NgModule({
@@ -37,7 +40,8 @@ import { AuthGuardModule } from '@angular/fire/auth-guard';
     AdminProductsComponent,
     AdminOrdersComponent,
     LoginComponent,
-    OrdersComponent
+    OrdersComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,9 @@ import { AuthGuardModule } from '@angular/fire/auth-guard';
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    AuthGuardModule
+    AuthGuardModule,
+    FormsModule,
+    DataTablesModule
   ],
   providers: [
     ScreenTrackingService, UserTrackingService
