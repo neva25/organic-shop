@@ -34,6 +34,10 @@ export class ProductService {
     return docData(doc(this.afs, `products/${id}`), { idField: 'id' });  
   }
 
+  getAll(): Observable<Product[]> {
+    return collectionData(collection(this.afs, 'products'), { idField: 'id' });
+  } 
+
   update(product: Product) {
     return setDoc(doc(this.afs, `products/${product.id}`), product);
   }

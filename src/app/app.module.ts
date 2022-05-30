@@ -24,6 +24,8 @@ import { OrdersComponent } from './orders/orders.component';
 import { AuthGuardModule } from '@angular/fire/auth-guard';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { DataTablesModule } from 'angular-datatables';
+import { ProductFilterComponent } from './products/product-filter/product-filter.component';
+import { ProductCardComponent } from './products/product-card/product-card.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { DataTablesModule } from 'angular-datatables';
     AdminOrdersComponent,
     LoginComponent,
     OrdersComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    ProductFilterComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
